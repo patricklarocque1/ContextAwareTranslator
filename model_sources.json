@@ -1,0 +1,11 @@
+{
+	"models": [
+		{
+			"id": "tiny.en",
+			"displayName": "Whisper Tiny EN",
+			"url": "https://example.com/path/to/ggml-tiny.en.gguf",
+			"sha256": "REPLACE_WITH_REAL_SHA256",
+			"bytes": 0
+		}
+	]
+}

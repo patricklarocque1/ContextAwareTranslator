@@ -27,7 +27,7 @@ git submodule update --init --recursive
 
 Open in Android Studio (Arctic Fox+). Allow it to install NDK / CMake.
 
-Run the app: choose a model to download, then tap the microphone.
+Run the app: on first launch you will see a model list. Update `model_sources.json` with a valid URL & SHA256 for (e.g.) `tiny.en`. Tap Download, then Load Model. (Whisper load integration placeholder currently logs the selected file path.)
 
 ## Model Handling
 The app fetches Whisper GGUF model files from a configurable base URL (`model_sources.json`). You can host quantized models on e.g. Hugging Face or your own CDN.
@@ -40,6 +40,9 @@ Uses `whisper.cpp` (MIT). JNI layer wraps:
 
 ## To Do
 See `docs/ROADMAP.md` (or create issues).
+
+### Model Selection UI (Prototype)
+Added a basic Compose screen listing models from `model_sources.json` (packaged as asset). A WorkManager job downloads and verifies SHA256. Future steps: integrate actual JNI whisper load & partial streaming.
 
 ## Licensing
 - Core app: MIT
