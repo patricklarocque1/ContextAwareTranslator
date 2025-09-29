@@ -1,11 +1,11 @@
-{
-	"models": [
-		{
-			"id": "tiny.en",
-			"displayName": "Whisper Tiny EN",
-			"url": "https://example.com/path/to/ggml-tiny.en.gguf",
-			"sha256": "REPLACE_WITH_REAL_SHA256",
-			"bytes": 0
-		}
-	]
-}
+[
+  {
+    "id": "whisper-tiny.en-q4_k_m",
+    "displayName": "Whisper Tiny EN Q4_K_M",
+    "sizeBytes": 24408064,
+    "url": "https://huggingface.co/TheBloke/whisper-tiny.en-GGUF/resolve/main/whisper-tiny.en-Q4_K_M.gguf?download=true",
+    "sha256": "REPLACE_WITH_REAL_SHA256",
+    "qualityTier": "tiny",
+    "languageHint": "en"
+  }
+]
